@@ -69,12 +69,4 @@ Hatırlatma sistemi n8n üzerindeki Schedule/Cron düğümü sayesinde otomatik 
 3. n8n üzerinde randevu onay ve hatırlatma workflow’ları yapılandırılmıştır
 4. E-posta gönderimi n8n üzerinden SMTP/Gmail servisi ile sağlanmaktadır
 
----
 
-## Proje Kapsamı
-Bu proje eğitim amaçlı olarak hazırlanmış olup, temel seviye web geliştirme ve otomasyon entegrasyonu örneği sunmaktadır.
-
----
-
-## Geliştirici
-Bu proje bir ders ödevi kapsamında geliştirilmiştir.
