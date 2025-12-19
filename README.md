@@ -1,75 +1,59 @@
-# Beauty Salon Appointment Automation
+# Myapp
 
-## Proje Açıklaması
-Bu proje, kuaför ve güzellik salonu gibi küçük işletmeler için geliştirilmiş, online randevu alma ve randevu süreçlerini otomatikleştiren web tabanlı bir sistemdir. Proje kapsamında web sitesi Firebase Studio kullanılarak oluşturulmuş, randevu onay ve hatırlatma işlemleri ise n8n otomasyon aracı ile gerçekleştirilmiştir.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
 
----
+## Development server
 
-## Projenin Amacı
-- Güzellik salonu hizmetlerini tanıtan bir web sitesi oluşturmak
-- Müşterilerin online olarak randevu alabilmesini sağlamak
-- Alınan randevular için otomatik onay e-postası göndermek
-- Randevu tarihinden 1 gün önce otomatik hatırlatma maili/SMS göndermek
-- Zamanlanmış (scheduled) otomasyon mantığını uygulamalı olarak göstermek
+To start a local development server, run:
 
----
+```bash
+ng serve
+```
 
-## Kullanılan Teknolojiler
-- **Web Sitesi:** Firebase Studio
-- **Otomasyon:** n8n
-- **Veri Kaynağı:** Google Sheets
-- **Bildirim Servisleri:** E-posta (SMTP / Gmail – n8n üzerinden)
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
----
+## Code scaffolding
 
-## Web Sitesi Özellikleri (Firebase Studio)
-- **Hizmetler Sayfası:** Saç kesimi, manikür, cilt bakımı vb. hizmetlerin detaylı açıklamaları
-- **Fiyatlar Sayfası:** Sunulan hizmetlere ait güncel fiyat listesi
-- **Galeri:** İşletmenin iç mekânı ve yapılan işlemlere ait en az 4 görsel
-- **Randevu Formu:**  
-  - Müşteri Adı  
-  - Telefon Numarası  
-  - E-posta Adresi  
-  - Hizmet Türü  
-  - Randevu Tarihi ve Saati  
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
----
+```bash
+ng generate component component-name
+```
 
-## n8n Workflow – Randevu Onay ve Hatırlatma
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-### 1. Otomatik Randevu Onay Maili
-- **Tetikleyici:** Webhook (Randevu formu gönderildiğinde çalışır)
-- **İşlem:** Formdan gelen randevu verileri Google Sheets’e kaydedilir
-- **Eylem:** Müşterinin e-posta adresine randevu detaylarını içeren otomatik onay maili gönderilir
+```bash
+ng generate --help
+```
 
-**Örnek Mail İçeriği:**  
-“Randevunuz Onaylandı! [Hizmet] – [Tarih] [Saat]”
+## Building
 
----
+To build the project run:
 
-### 2. Randevu Hatırlatma (Scheduled)
-- **Tetikleyici:** Schedule / Cron düğümü (Her gün otomatik çalışacak şekilde ayarlanmıştır)
-- **İşlem:** Google Sheets üzerinden randevu kayıtları çekilir
-- **Koşul:** Randevu tarihi, bugünden 1 gün sonrası olan kayıtlar filtrelenir
-- **Eylem:** Randevu sahibine hatırlatma e-postası veya SMS gönderilir
+```bash
+ng build
+```
 
-**Örnek Hatırlatma Mesajı:**  
-“Yarın [Saat]’teki randevunuzu unutmayın.”
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
----
+## Running unit tests
 
-## Zamanlanmış Çalışma Mantığı
-Hatırlatma sistemi n8n üzerindeki Schedule/Cron düğümü sayesinde otomatik olarak çalışır. Workflow her gün belirlenen saatte tetiklenir, mevcut tarih ile randevu tarihi karşılaştırılır ve randevusuna 1 gün kalan müşterilere otomatik bildirim gönderilir. Bu sayede manuel kontrol ihtiyacı ortadan kaldırılır.
+To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
----
+```bash
+ng test
+```
 
-## Kurulum ve Kullanım
-1. Web sitesi Firebase Studio kullanılarak oluşturulmuş ve Firebase Hosting üzerinde yayınlanmıştır
-2. Randevu formu verileri Google Sheets’e kaydedilmektedir
-3. n8n üzerinde randevu onay ve hatırlatma workflow’ları yapılandırılmıştır
-4. E-posta gönderimi n8n üzerinden SMTP/Gmail servisi ile sağlanmaktadır
+## Running end-to-end tests
 
----
+For end-to-end (e2e) testing, run:
 
-## Geliştirici
-Bu proje bir ders ödevi kapsamında geliştirilmiştir.
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

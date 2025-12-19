@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "beautyhub-81354002-5ab04",
+    "public": "dist/myapp/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9; /* Tüm sayfa için arka plan rengi */
+}
+
+.main-content {
+  flex: 1; /* Kalan tüm alanı kapla */
+  display: flex; /* Flexbox'ı etkinleştir */
+  justify-content: center; /* İçeriği yatayda ortala */
+  align-items: center; /* İçeriği dikeyde ortala */
+  padding: 1rem; /* Kenarlardan boşluk bırak */
+}
