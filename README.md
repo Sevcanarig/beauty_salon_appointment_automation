@@ -70,3 +70,15 @@ Hatırlatma sistemi n8n üzerindeki Schedule/Cron düğümü sayesinde otomatik 
 4. E-posta gönderimi n8n üzerinden SMTP/Gmail servisi ile sağlanmaktadır
 
 
+## Proje Görselleri
+
+### n8n – Randevu Onay Workflow
+![Randevu Onay Workflow](Ekran görüntüsü 2025-12-19 154522.png)
+
+### n8n – Zamanlanmış Randevu Hatırlatma Workflow
+![Randevu Hatırlatma Workflow](Ekran görüntüsü 2025-12-19 154434.png)
+
+### Web Sitesi Görselleri
+![Ana Sayfa](Ekran görüntüsü 2025-12-19 154618.png)
+![Hizmetler](Ekran görüntüsü 2025-12-19 154708.png)
+![Randevu Formu](Ekran görüntüsü 2025-12-19 154726.png)
