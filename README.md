@@ -73,12 +73,12 @@ Hatırlatma sistemi n8n üzerindeki Schedule/Cron düğümü sayesinde otomatik 
 ## Proje Görselleri
 
 ### n8n – Randevu Onay Workflow
-![Randevu Onay Workflow](Ekran görüntüsü 2025-12-19 154522.png)
+![Randevu Onay Workflow](n8n-confirmation-workflow.png)
 
 ### n8n – Zamanlanmış Randevu Hatırlatma Workflow
-![Randevu Hatırlatma Workflow](Ekran görüntüsü 2025-12-19 154434.png)
+![Randevu Hatırlatma Workflow](n8n-reminder-workflow.png)
 
 ### Web Sitesi Görselleri
-![Ana Sayfa](Ekran görüntüsü 2025-12-19 154618.png)
-![Hizmetler](Ekran görüntüsü 2025-12-19 154708.png)
-![Randevu Formu](Ekran görüntüsü 2025-12-19 154726.png)
+![Ana Sayfa](website-home.png)
+![Hizmetler](website-services.png)
+![Randevu Formu](website-appointment-form.png)
