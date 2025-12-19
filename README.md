@@ -1,4 +1,4 @@
-# Beauty Salon Appointment Automation
+# Beauty Salon Appointment Automation 💇‍♀️📅💄✨
 
 ## Proje Açıklaması
 Bu proje, kuaför ve güzellik salonu gibi küçük işletmeler için geliştirilmiş, online randevu alma ve randevu süreçlerini otomatikleştiren web tabanlı bir sistemdir. Proje kapsamında web sitesi Firebase Studio kullanılarak oluşturulmuş, randevu onay ve hatırlatma işlemleri ise n8n otomasyon aracı ile gerçekleştirilmiştir.
